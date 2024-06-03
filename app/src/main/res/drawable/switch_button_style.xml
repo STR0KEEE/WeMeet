@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- circle_with_loading.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Green Circle -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/userPrimary" />
+        </shape>
+    </item>
+    <!-- Loading Image -->
+    <item android:drawable="@drawable/loading"
+    android:gravity="center" />
+</layer-list>

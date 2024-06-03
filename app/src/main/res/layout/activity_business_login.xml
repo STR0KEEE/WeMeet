@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    android:padding="16dp"
+    tools:context=".BusinessSide.BusinessLoginActivity">
+
+    <!-- Enlarged and Circular Profile Icon -->
+    <ImageView
+        android:id="@+id/logo_Business"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <!-- Username Box -->
+    <RelativeLayout
+        android:id="@+id/usernameBox_Business"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_Business"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_square"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/editTextUsername_Business"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="email"
+            android:textColor="#000000"
+            android:textColorHint="#535353"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RelativeLayout>
+
+    <!-- Password Box -->
+    <RelativeLayout
+        android:id="@+id/passwordBox_Business"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameBox_Business"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_square"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/editTextPassword_Business"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#535353"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RelativeLayout>
+
+    <!-- Buttons in Horizontal LinearLayout with Spacing -->
+    <LinearLayout
+        android:id="@+id/buttonLayout_Business"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordBox_Business"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Log In Button -->
+        <Button
+            android:id="@+id/btnLogin_Business"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Log In"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#004CAC"
+            android:padding="12dp" />
+
+        <!-- Space between Log In and Sign Up Buttons -->
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignUp_Business"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#888888"
+            android:padding="12dp" />
+    </LinearLayout>
+
+    <!-- Switch Button -->
+    <Button
+        android:id="@+id/btnSwitch_Business"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/businessPrimary"
+        android:padding="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Forgot Password TextView -->
+    <TextView
+        android:id="@+id/btnForgotPassword_Business"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/buttonLayout_Business"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:padding="12dp" />
+
+    <!-- Sign Up TextView -->
+    <!-- Add any additional views as needed -->
+
+</RelativeLayout>

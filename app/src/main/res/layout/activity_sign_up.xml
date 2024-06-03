@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    android:padding="16dp"
+    tools:context=".UserSide.SignUpActivity">
+
+    <!-- Logo in the Top-Left Corner -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo" />
+
+    <!-- Profile Icon -->
+
+    <!-- First Name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/logo"
+        android:text="Scheduler"
+        android:textColor="@color/white"
+        android:textSize="30dp"></TextView>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:background="#FFFFFF"
+        android:hint="Name"
+        android:padding="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#535353" />
+
+    <!-- Last Name -->
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:hint="Username"
+        android:padding="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#535353" />
+
+    <!-- Phone Number -->
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUsername"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#535353" />
+
+    <LinearLayout
+        android:id="@+id/ageGenderLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPhoneNumber"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <!-- Age -->
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:hint="Age"
+            android:layout_marginRight="5dp"
+            android:layout_weight="3"
+            android:inputType="number"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textColorHint="#535353" />
+
+        <TextView
+            android:id="@+id/textViewGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/border"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Gender"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Username -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageGenderLL"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:hint="email"
+        android:padding="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#535353" />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#535353" />
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#004CAC"
+        android:padding="12dp"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Icon at the top -->
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+<LinearLayout
+    android:id="@+id/nameAndTypeLL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/iconImageView"
+    android:orientation="horizontal"
+    android:layout_marginTop="16dp"
+    android:weightSum="2">
+    <EditText
+        android:id="@+id/editTextBusinessName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/button_square"
+        android:paddingRight="5dp"
+        android:textColor="@color/black"
+        android:paddingLeft="5dp"
+        android:layout_weight="1"
+        android:hint="Business Name" />
+    <EditText
+        android:id="@+id/editTextBusinessType"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/button_square"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:hint="Business Type"
+        android:layout_weight="1"/>
+</LinearLayout>
+    <!-- Email -->
+
+    <LinearLayout
+        android:id="@+id/emailAndPassLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameAndTypeLL"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:weightSum="3">
+    <EditText
+        android:id="@+id/editTextBusinessEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/button_square"
+        android:textColor="@color/black"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:inputType="textEmailAddress"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:hint="Email" />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/editTextBusinessPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/button_square"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:layout_weight="2"
+        android:inputType="textPassword"
+        android:hint="Password" />
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/timePickerLL"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/emailAndPassLL"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        &lt;!&ndash; Linear layout for the buttons &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="3"-->
+<!--            android:orientation="vertical">-->
+
+<!--            &lt;!&ndash; Start Of Shift button &ndash;&gt;-->
+<!--            <androidx.appcompat.widget.AppCompatButton-->
+<!--                android:id="@+id/startBtn"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Start Of Shift"></androidx.appcompat.widget.AppCompatButton>-->
+
+<!--            &lt;!&ndash; End Of Shift button &ndash;&gt;-->
+<!--            <androidx.appcompat.widget.AppCompatButton-->
+<!--                android:id="@+id/endBtn"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="End Of Shift"></androidx.appcompat.widget.AppCompatButton>-->
+
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash; Linear layout for the EditText &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="10dp">-->
+
+<!--            &lt;!&ndash; EditText for duration &ndash;&gt;-->
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/durationTV"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#464646"-->
+<!--                android:inputType="number"-->
+<!--                android:padding="5dp" />-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+    <!-- About -->
+    <EditText
+        android:id="@+id/editTextAbout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/button_square"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/emailAndPassLL"
+        android:layout_marginTop="16dp"
+        android:hint="About" />
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/btnSignUp_Business"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAbout"
+        android:layout_marginTop="24dp"
+        android:text="Sign Up" />
+
+    <!-- Custom Button with Drawable Background -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/switchButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/switch_button_style" />
+
+</RelativeLayout>

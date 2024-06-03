@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="backgroundColor">#121212</color>
+    <color name="businessPrimary">#328CFF</color>
+    <color name="userPrimary">#00E66A</color>
+    <color name="NavBarDark">#262626</color>
+    <color name="fieldBackground">#D9D9D9</color>
+
+    <color name="colorPrimary">#3F51B5</color> <!-- Your desired primary color -->
+    <color name="colorPrimaryDark">#303F9F</color> <!-- Your desired primary dark color -->
+    <color name="colorAccent"></color> <!-- Your desired accent color -->
+
+    <color name="availableColor">#6BFF68</color> <!-- Green color for available appointments -->
+    <color name="notAvailableColor">#477BFF</color> <!-- Red color for not available
+    appointments -->
+
+</resources>
